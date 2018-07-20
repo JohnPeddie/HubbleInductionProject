@@ -1,0 +1,23 @@
+{{! -*- mode: web; web-mode-markup-indent-offset: 2 -*- }}
+<table class="datatable">
+  <thead>
+    <tr>
+      <th>{{#str}}id, tool_datatables{{/str}}</th>
+      <th>first name</th>
+      <th>last name</th>
+      <th>courses</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#users}}
+      <tr>
+	<td>{{id}}</td>
+	<td>{{firstname}}</td>
+	<td>{{lastname}}</td>
+	<td>{{courses}}</td>
+	
+      </tr>
+    {{/users}}
+  </tbody>
+</table>
